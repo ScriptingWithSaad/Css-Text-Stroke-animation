@@ -1,0 +1,39 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    /* background: greenyellow; */
+}
+
+svg text {
+    font-size: 5rem;
+    stroke: hotpink;
+    fill: transparent;
+    stroke-width: 3px;
+    letter-spacing: 2px;
+    font-family: "system-ui";
+    font-weight: bold;
+    animation: effect 5s linear infinite;
+}
+
+@keyframes effect {
+    0% {
+        stroke-dasharray: 0 70%;
+    }
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: 10%;
+    }
+}
